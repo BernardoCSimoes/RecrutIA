@@ -9,6 +9,7 @@ O **RecrutAI** é um jogo de análise de currículos que aborda o uso responsáv
 ## Integrantes
 
 - **Nome:** Bernardo Coelho Simões
+- **Nome:** Artur Almeida Machado
 
 ## Tema e proposta
 
