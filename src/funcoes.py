@@ -1,3 +1,35 @@
+def calcular_nota(candidato):
+    """Calcula a nota ponderada do candidato."""
+    nota = (
+        candidato["habilidades"] * 0.45
+        + candidato["determinacao"] * 0.40
+        + candidato["experiencia"] * 0.15
+    )
+    return nota
+
+
+def recomendar_ia(candidato):
+    """Simula a IA, que considera principalmente a experiencia."""
+    if candidato["experiencia"] >= 6:
+        return "aprovar"
+    return "rejeitar"
+
+
+def verificar_decisao(candidato, decisao):
+    """Compara a decisao do jogador com a classificacao do candidato."""
+    nota = calcular_nota(candidato)
+    adequado = nota >= 6.5
+
+    if adequado and decisao == "aprovar":
+        correta = True
+    elif not adequado and decisao == "rejeitar":
+        correta = True
+    else:
+        correta = False
+
+    return correta, nota, adequado
+
+
 def calcular_pontos(pontos_atual, pontos_ganhos):
     """Soma os pontos ganhos à pontuação atual."""
     return pontos_atual + pontos_ganhos
