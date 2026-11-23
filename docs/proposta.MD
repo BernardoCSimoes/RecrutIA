@@ -7,6 +7,7 @@
 ## 2. Integrantes do grupo
 
 - Nome 1: **Bernardo Coelho Simões**
+- Nome 2: **Artur Almeida Machado**
 
 ## 3. Tema escolhido
 
